@@ -6,10 +6,10 @@ Feature: Challenging Dom
   Para que eu passe pela fase de case
 
   Background:
-    Given que eu navego até a url "https://the-internet.herokuapp.com/challenging_dom"
-    When a página carrega
+    Given que eu navego ate a url "https://the-internet.herokuapp.com/challenging_dom"
+    When a pagina carrega
 
-  Scenario Outline: Efetuar um clique em nos botões azul, vermelho e verde
+  Scenario Outline: Efetuar um clique em nos botoes azul, vermelho e verde
     Then clico no "<button>"
 
     Examples:
@@ -18,6 +18,6 @@ Feature: Challenging Dom
       | red_button   |
       | green_button |
 
-    Scenario: Clicar em todos os botões edit e delete
-      Then clico em todos os botões que contém edit e delete
+    Scenario: Clicar em todos os botoes edit e delete
+      Then clico em todos os botoes que contem edit e delete
 

@@ -7,13 +7,13 @@ public class ChallengingDomTestsSteps {
 
     private ChallengingDomPage cd = new ChallengingDomPage();
 
-    @Given("que eu navego até a url {string}")
-    public void que_eu_navego_até_a_url(String url) {
+    @Given("que eu navego ate a url {string}")
+    public void que_eu_navego_ate_a_url(String url) {
         cd.navigateTo(url);
     }
 
-    @When("a página carrega")
-    public void a_página_carrega() {
+    @When("a pagina carrega")
+    public void a_pagina_carrega() {
         cd.validatePage();
     }
 
@@ -22,8 +22,8 @@ public class ChallengingDomTestsSteps {
         cd.clickButtonByColor(button);
     }
 
-    @Then("clico em todos os botões que contém edit e delete")
-    public void clico_em_todos_os_botões_que_contém_edit_e_delete() {
+    @Then("clico em todos os botoes que contem edit e delete")
+    public void clico_em_todos_os_botoes_que_contem_edit_e_delete() {
         cd.clickAllButtonsEditAndDelete();
     }
 
